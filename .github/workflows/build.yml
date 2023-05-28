@@ -30,7 +30,7 @@ jobs:
     - name: Expose binary as artifact
       uses: actions/upload-artifact@v3
       with:
-        name: lprint
+        name: lprint-linux
         path: lprint
 
   build-macos:
@@ -52,5 +52,5 @@ jobs:
     - name: Expose binary as artifact
       uses: actions/upload-artifact@v3
       with:
-        name: lprint
+        name: lprint-macos
         path: lprint
