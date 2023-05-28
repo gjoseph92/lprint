@@ -27,6 +27,11 @@ jobs:
       run: make
     - name: debug
       uses: mxschmitt/action-tmate@v3
+    - name: Expose binary as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: lprint
+        path: lprint
 
   build-macos:
 
@@ -44,3 +49,8 @@ jobs:
       run: make
     - name: debug
       uses: mxschmitt/action-tmate@v3
+    - name: Expose binary as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: lprint
+        path: lprint
