@@ -40,3 +40,5 @@ jobs:
       run: ./configure --enable-debug --enable-maintainer --enable-sanitizer
     - name: make
       run: make
+    - name: debug
+      uses: mxschmitt/action-tmate@v3
